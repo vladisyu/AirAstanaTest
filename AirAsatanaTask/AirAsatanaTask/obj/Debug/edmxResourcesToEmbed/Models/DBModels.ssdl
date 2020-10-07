@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AirAstanaDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Flights">
+    <Key>
+      <PropertyRef Name="FlightID" />
+    </Key>
+    <Property Name="FlightID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Departure" Type="varchar" MaxLength="50" />
+    <Property Name="Arrival" Type="varchar" MaxLength="50" />
+    <Property Name="DepTime" Type="time" Precision="7" />
+    <Property Name="ArrTime" Type="time" Precision="7" />
+    <Property Name="Delay" Type="time" Precision="7" />
+  </EntityType>
+  <EntityContainer Name="AirAstanaDBModelStoreContainer">
+    <EntitySet Name="Flights" EntityType="Self.Flights" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

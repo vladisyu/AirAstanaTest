@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AirAstanaDBModelStoreContainer" CdmEntityContainer="DBModel">
+    <EntitySetMapping Name="Flights">
+      <EntityTypeMapping TypeName="AirAstanaDBModel.Flight">
+        <MappingFragment StoreEntitySet="Flights">
+          <ScalarProperty Name="FlightID" ColumnName="FlightID" />
+          <ScalarProperty Name="Departure" ColumnName="Departure" />
+          <ScalarProperty Name="Arrival" ColumnName="Arrival" />
+          <ScalarProperty Name="DepTime" ColumnName="DepTime" />
+          <ScalarProperty Name="ArrTime" ColumnName="ArrTime" />
+          <ScalarProperty Name="Delay" ColumnName="Delay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
